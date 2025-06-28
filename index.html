@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyWings - דף הבית</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Nunito', sans-serif;
+      margin: 0;
+      background: #f0f9ff;
+      color: #333;
+      direction: rtl;
+      text-align: right;
+    }
+    header, footer {
+      background-color: #004080;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: #ffffff;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      animation: fadeInDown 0.8s ease;
+    }
+    nav a {
+      color: #004080;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #00aaff;
+    }
+    .content {
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+      animation: fadeInUp 1s ease;
+    }
+    h2 {
+      color: #004080;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 4rem;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SkyWings - מערכת ניהול נתונים</h1>
+    <p>מערכת אינטראקטיבית להצגת דשבורדים תפעוליים, ניהוליים ושירותיים</p>
+  </header>
+  <nav>
+    <a href="index.html">דף הבית</a>
+    <a href="ceo_dashboard.html">דשבורד מנהלים</a>
+    <a href="dashboard_operations.html">דשבורד תפעול</a>
+    <a href="dashboard_customers.html">דשבורד שירות לקוחות</a>
+  </nav>
+  <div class="content">
+    <h2>ברוכים הבאים ל-SkyWings</h2>
+    <p>
+      SkyWings היא חברת תעופה חדשנית המתמחה בשירות איכותי, תפעול מדויק וניהול חכם.
+      באתר זה תמצאו שלושה דשבורדים מתקדמים: עבור ההנהלה הבכירה, צוותי התפעול, ומחלקת שירות הלקוחות.
+      מטרת הדשבורדים היא לאפשר קבלת החלטות מבוססות נתונים ולשפר את ביצועי החברה בזמן אמת.
+    </p>
+  </div>
+  <footer>
+    &copy; 2025 SkyWings Airlines. כל הזכויות שמורות.
+  </footer>
+</body>
+</html>
